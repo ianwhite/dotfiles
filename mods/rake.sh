@@ -1,0 +1,1 @@
+complete -C ~/.dotfiles/mods/rake.rb -o default rake
