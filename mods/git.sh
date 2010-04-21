@@ -6,7 +6,7 @@ source /usr/local/etc/bash_completion.d/git-completion.bash
 ##
 ## aliases
 ##
-alias git=hub
+
 
 ##
 ## functions
