@@ -1,1 +1,2 @@
-if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
+[[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
+[[ -r ~/.rvm/scripts/completion ]] && source ~/.rvm/scripts/completion
