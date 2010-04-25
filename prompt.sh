@@ -7,10 +7,11 @@ cyan='\e[0;36m'
 grey='\e[0;37m'
 normal='\e[m'
 
-User="$green\u@\h$normal" 
-Dir=" $blue\W$normal"
-Ruby=" $purple\$(~/.rvm/bin/rvm-prompt v p)$normal"
-Git="$cyan\$(__git_ps1 ' %s')$red\$(git-dirty)$normal"
-Prompt=" $grey\$$normal "
+user="$green\u@\h$normal" 
+dir=" $blue\W$normal"
+git="$cyan\$(__git_ps1 ' %s')$red\$(git-dirty)$normal"
+prompt=" $grey\$$normal "
 
-export PS1="$User$Dir$Ruby$Git$Prompt"
+[[ -r ~/.rvm/bin/rvm-prompt ]] && ruby=" $purple\$(~/.rvm/bin/rvm-prompt v p)$normal"
+
+export PS1="$user$dir$ruby$git$prompt"
