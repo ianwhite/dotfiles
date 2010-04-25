@@ -1,11 +1,10 @@
 # export variables
-. ~/.dotfiles/variables.sh
+source ~/.dotfiles/variables.sh
 
 # load each file in mods/*.sh
-for f in ~/.dotfiles/mods/*.sh
-do
-	. $f
+for f in ~/.dotfiles/mods/*.sh; do
+	source $f
 done
 
 # set the prompt
-. ~/.dotfiles/prompt.sh
+source ~/.dotfiles/prompt.sh
