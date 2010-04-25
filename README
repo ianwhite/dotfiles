@@ -1,5 +1,5 @@
 to use this
 
   1. git clone git://github.com/ianwhite/dotfiles ~/.dotfiles
-  2. add this following line in .bash_profile
+  2. add this following line in .bash_profile & .bashrc
       . ~/.dotfiles/profile.sh
