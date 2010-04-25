@@ -9,7 +9,7 @@ normal='\e[m'
 
 User="$green\u@\h$normal" 
 Dir=" $blue\W$normal"
-Ruby=" $purple\$(~/.rvm/bin/rvm-prompt -vp)$normal"
+Ruby=" $purple\$(~/.rvm/bin/rvm-prompt v p)$normal"
 Git="$cyan\$(__git_ps1 ' %s')$red\$(git-dirty)$normal"
 Prompt=" $grey\$$normal "
 
