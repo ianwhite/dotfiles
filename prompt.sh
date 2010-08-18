@@ -9,8 +9,13 @@ normal='\[\e[m\]'
 
 user="$green\u@\h$normal" 
 dir=" $blue\W$normal"
-git="$cyan\$(__git_ps1 ' %s')$red\$(git-dirty)$normal"
 prompt=" $grey\$$normal "
+
+if [[ $PWD =~ db/dump.* ]]; then
+	git="$cyan no git info for db/dump $normal"
+else
+	git="$cyan\$(__git_ps1 ' %s')$red\$(git-dirty)$normal"
+fi	
 
 [[ -r ~/.rvm/bin/rvm-prompt ]] && ruby=" $purple\$(~/.rvm/bin/rvm-prompt v p)$normal"
 
