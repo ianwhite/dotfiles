@@ -12,6 +12,6 @@ dir=" $blue\W$normal"
 prompt=" $grey\$$normal "
 git="$cyan\$(__git_ps1 ' %s')$red\$(git-dirty)$normal"
 
-[[ -r ~/.rvm/bin/rvm-prompt ]] && ruby=" $purple\$(~/.rvm/bin/rvm-prompt v p)$normal"
+[[ -r ~/.rvm/bin/rvm-prompt ]] && ruby=" $purple\$(~/.rvm/bin/rvm-prompt)$normal"
 
 export PS1="$user$dir$ruby$git$prompt"
