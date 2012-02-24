@@ -1,1 +1,1 @@
-export EDITOR=mate_wait
+export EDITOR='mate_wait'
