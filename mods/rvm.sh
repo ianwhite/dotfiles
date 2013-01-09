@@ -1,3 +1,2 @@
-[[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
-[[ -r ~/.rvm/scripts/completion ]] && source ~/.rvm/scripts/completion
-[[ -s ~/.rvm/bin ]] && export PATH=$HOME/.rvm/bin:$PATH
+export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

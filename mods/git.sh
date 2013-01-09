@@ -1,5 +1,7 @@
 # completions
-source /usr/local/etc/bash_completion.d/git-completion.bash
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
 
 # functions
 
